@@ -1,0 +1,39 @@
+{
+  service: 'student-event-management',
+  version: '1.0.0',
+  environment: 'development',
+  rss: '27 MB',
+  heapTotal: '17 MB',
+  heapUsed: '15 MB',
+  external: '2 MB',
+  category: 'performance',
+  timestamp: '2025-09-05 14:20:44',
+  level: 'info',
+  message: '[PERFORMANCE] Memory usage'
+}
+{
+  service: 'student-event-management',
+  version: '1.0.0',
+  environment: 'development',
+  rss: '30 MB',
+  heapTotal: '17 MB',
+  heapUsed: '15 MB',
+  external: '2 MB',
+  category: 'performance',
+  timestamp: '2025-09-05 15:43:52',
+  level: 'info',
+  message: '[PERFORMANCE] Memory usage'
+}
+{
+  service: 'student-event-management',
+  version: '1.0.0',
+  environment: 'development',
+  rss: '30 MB',
+  heapTotal: '17 MB',
+  heapUsed: '15 MB',
+  external: '2 MB',
+  category: 'performance',
+  timestamp: '2025-09-05 16:51:43',
+  level: 'info',
+  message: '[PERFORMANCE] Memory usage'
+}
