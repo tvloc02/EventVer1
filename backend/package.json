@@ -1,7 +1,7 @@
 {
   "name": "student-event-management-backend",
   "version": "1.0.0",
-  "description": "Backend API for Student Event Management System with SQL Server",
+  "description": "Backend API for Student Event Management System with MongoDB",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
@@ -9,20 +9,18 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
-    "db:create": "node scripts/createDatabase.js",
-    "db:init": "node scripts/initDatabase.js",
-    "db:seed": "node scripts/seedDatabase.js",
-    "db:reset": "node scripts/resetDatabase.js",
+    "db:seed": "node scripts/seedComplete.js",
+    "db:simple-seed": "node scripts/simpleSeed.js",
     "lint": "eslint src/",
     "lint:fix": "eslint src/ --fix",
     "build": "echo 'No build step required'",
-    "setup": "npm install && npm run db:init && npm run db:seed"
+    "setup": "npm install && npm run db:seed"
   },
   "keywords": [
     "nodejs",
     "express",
-    "sqlserver",
-    "mssql",
+    "mongodb",
+    "mongoose",
     "event-management",
     "student",
     "api"
@@ -31,7 +29,7 @@
   "license": "MIT",
   "dependencies": {
     "express": "^4.18.2",
-    "mssql": "^10.0.1",
+    "mongoose": "^8.0.3",
     "bcryptjs": "^2.4.3",
     "jsonwebtoken": "^9.0.2",
     "cors": "^2.8.5",
@@ -57,7 +55,6 @@
     "lodash": "^4.17.21",
     "sharp": "^0.33.0",
     "pdf-lib": "^1.17.1",
-    
     "compression": "^1.7.4",
     "express-validator": "^7.0.1",
     "swagger-jsdoc": "^6.2.8",
